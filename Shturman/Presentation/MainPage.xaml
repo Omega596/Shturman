@@ -1,0 +1,40 @@
+<Page x:Class="Shturman.Presentation.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Foreground="{ThemeResource Theme_TextBrush}" d:DesignWidth="416" d:DesignHeight="932">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="{ThemeResource Theme_BackgroundColor}" />
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Ellipse StrokeThickness="10" Stroke="#FF808080" Fill="#FF595959" HorizontalAlignment="Center" Width="280" VerticalAlignment="Center" Height="280" Stretch="Fill"/>
+            <Image Source="https://userware-xaml-designer-backend-api.azurewebsites.net/images/logo.png" Width="222"/>
+        </Grid>
+        <Button Grid.Row="1" PointerPressed="Button_PointerPressed" PointerExited="Button_PointerExited" HorizontalAlignment="Stretch" BorderBrush="#FF8B0000" BorderThickness="1" VerticalAlignment="Bottom" Background="#FFFF0000" Foreground="#FF8B0000" Content="{x:Bind CurrentText}" Margin="75,0,75,20">
+            <Button.Resources>
+                <Thickness x:Key="ButtonBorderThickness">2</Thickness>
+                <SolidColorBrush x:Key="FilledButtonBackgroundPointerOver" Color="#FFFF0000"/>
+                <SolidColorBrush x:Key="FilledButtonForegroundPointerOver" Color="#FF8B0000"/>
+                <SolidColorBrush x:Key="FilledButtonBorderBrushPointerOver" Color="#FF8B0000"/>
+                <SolidColorBrush x:Key="FilledButtonBackgroundFocused" Color="#FFFF0000"/>
+                <SolidColorBrush x:Key="FilledButtonForegroundFocused" Color="#FF8B0000"/>
+                <SolidColorBrush x:Key="FilledButtonBorderBrushFocused" Color="#FF8B0000"/>
+                <SolidColorBrush x:Key="FilledButtonBackgroundPointerFocused" Color="#e60000"/>
+                <SolidColorBrush x:Key="FilledButtonForegroundPointerFocused" Color="#FF8B0000"/>
+                <SolidColorBrush x:Key="FilledButtonBorderBrushPointerFocused" Color="#FF8B0000"/>
+                <SolidColorBrush x:Key="FilledButtonBackgroundDisabled" Color="#c59d9d"/>
+                <SolidColorBrush x:Key="FilledButtonForegroundDisabled" Color="#948080"/>
+                <SolidColorBrush x:Key="FilledButtonBorderBrushDisabled" Color="#948080"/>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Page>
