@@ -19,7 +19,6 @@ public partial class App : Application
     protected async override void OnLaunched(LaunchActivatedEventArgs args)
     {
         var builder = this.CreateBuilder(args)
-            // Add navigation support for toolkit controls such as TabBar and NavigationView
             .UseToolkitNavigation()
             .Configure(host => host
 #if DEBUG
@@ -61,6 +60,20 @@ public partial class App : Application
                 )
                 // Enable localization (see appsettings.json for supported languages)
                 .UseLocalization()
+                .UseSerialization((context, services) => services
+                    .AddContentSerializer(context))
+                .UseHttp((context, services) => services
+                    // Register HttpClient
+#if DEBUG
+                    // DelegatingHandler will be automatically injected into Refit Client
+                    .AddTransient<DelegatingHandler, DebugHttpHandler>())
+#endif
+                .ConfigureServices((context, services) =>
+                {
+                    // TODO: Register your services
+                    //services.AddSingleton<IMyService, MyService>();
+                })
+                .UseNavigation(ReactiveViewModelMappings.ViewModelMappings, RegisterRoutes)
             );
         MainWindow = builder.Window;
 

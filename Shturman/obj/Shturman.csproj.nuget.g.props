@@ -21,7 +21,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets/8.0.0/buildTransitive/net6.0/Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets/8.0.0/buildTransitive/net6.0/Microsoft.Extensions.Configuration.UserSecrets.props')" />
     <Import Project="$(NuGetPackageRoot)uno.extensions.core/5.2.7/buildTransitive/Uno.Extensions.Core.props" Condition="Exists('$(NuGetPackageRoot)uno.extensions.core/5.2.7/buildTransitive/Uno.Extensions.Core.props')" />
     <Import Project="$(NuGetPackageRoot)refit/7.2.22/buildTransitive/netstandard2.0/refit.props" Condition="Exists('$(NuGetPackageRoot)refit/7.2.22/buildTransitive/netstandard2.0/refit.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.net.illink.tasks/8.0.13/build/Microsoft.NET.ILLink.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.illink.tasks/8.0.13/build/Microsoft.NET.ILLink.Tasks.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.illink.tasks/8.0.14/build/Microsoft.NET.ILLink.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.illink.tasks/8.0.14/build/Microsoft.NET.ILLink.Tasks.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net8.0-desktop' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)uno.fonts.fluent/2.6.1/buildTransitive/Uno.Fonts.Fluent.props" Condition="Exists('$(NuGetPackageRoot)uno.fonts.fluent/2.6.1/buildTransitive/Uno.Fonts.Fluent.props')" />
@@ -43,7 +43,7 @@
     <PkgUno_WinUI_DevServer Condition=" '$(PkgUno_WinUI_DevServer)' == '' ">/home/libc6/.nuget/packages/uno.winui.devserver/5.6.33</PkgUno_WinUI_DevServer>
     <PkgUno_UI_HotDesign Condition=" '$(PkgUno_UI_HotDesign)' == '' ">/home/libc6/.nuget/packages/uno.ui.hotdesign/1.3.1</PkgUno_UI_HotDesign>
     <PkgUno_Settings_DevServer Condition=" '$(PkgUno_Settings_DevServer)' == '' ">/home/libc6/.nuget/packages/uno.settings.devserver/1.2.13</PkgUno_Settings_DevServer>
-    <PkgMicrosoft_NET_ILLink_Tasks Condition=" '$(PkgMicrosoft_NET_ILLink_Tasks)' == '' ">/home/libc6/.nuget/packages/microsoft.net.illink.tasks/8.0.13</PkgMicrosoft_NET_ILLink_Tasks>
+    <PkgMicrosoft_NET_ILLink_Tasks Condition=" '$(PkgMicrosoft_NET_ILLink_Tasks)' == '' ">/home/libc6/.nuget/packages/microsoft.net.illink.tasks/8.0.14</PkgMicrosoft_NET_ILLink_Tasks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net8.0-desktop' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">/home/libc6/.nuget/packages/uno.winui/5.6.33</PkgUno_WinUI>

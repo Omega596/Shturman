@@ -17,46 +17,8 @@ public partial record MainModel
     private Windows.Devices.Geolocation.Geolocator Geolocation = new();
 
     public List<Geoposition> path = new List<Geoposition>();
-    private static bool _ap;
-
-    private static bool ActivatePath
-    {
-        get => _ap;
-        set { _ap = value; }
-    }
-
-    public static bool _button;
-
-    public static bool Button
-    {
-        get => _button;
-        set
-        {
-            _button = value;
-            if (value)
-            {
-                if (ActivatePath)
-                {
-                    ActivatePath = false;
-                    CurrentText = Text;
-                }
-                else
-                {
-                    ActivatePath = true;
-                    CurrentText = Text2;
-                }
-            }
-        }
-    }
-
-    public const string Text = "Я заблудился";
-    public const string Text2 = "Отменить";
-    public static string CurrentText = Text;
-
-    public void ButtonActivated()
-    {
-        path.Reverse();
-    }
+    private static bool _activatePath;
+    public static bool ActivatePath = false;
 
     public void GetGeoLocation()
     {
@@ -64,11 +26,13 @@ public partial record MainModel
         Geolocation.DesiredAccuracy = PositionAccuracy.High;
         if (access.GetResults() == GeolocationAccessStatus.Allowed)
         {
-            while (!ActivatePath)
+            while (_activatePath)
             {
                 path.Add(Geolocation.GetGeopositionAsync().GetResults() ?? throw new NullReferenceException());
                 Thread.Sleep(1000);
             }
+
+            path.Reverse();
         }
     }
 

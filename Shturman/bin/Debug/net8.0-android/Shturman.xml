@@ -15,6 +15,36 @@
             Resolves the Id of a bundled image.
             </summary>
         </member>
+        <member name="T:Shturman.Models.WeatherForecast">
+            <summary>
+            A Weather Forecast for a specific date
+            </summary>
+            <param name="Date">Gets the Date of the Forecast.</param>
+            <param name="TemperatureC">Gets the Forecast Temperature in Celsius.</param>
+            <param name="Summary">Get a description of how the weather will feel.</param>
+        </member>
+        <member name="M:Shturman.Models.WeatherForecast.#ctor(System.DateOnly,System.Double,System.String)">
+            <summary>
+            A Weather Forecast for a specific date
+            </summary>
+            <param name="Date">Gets the Date of the Forecast.</param>
+            <param name="TemperatureC">Gets the Forecast Temperature in Celsius.</param>
+            <param name="Summary">Get a description of how the weather will feel.</param>
+        </member>
+        <member name="P:Shturman.Models.WeatherForecast.Date">
+            <summary>Gets the Date of the Forecast.</summary>
+        </member>
+        <member name="P:Shturman.Models.WeatherForecast.TemperatureC">
+            <summary>Gets the Forecast Temperature in Celsius.</summary>
+        </member>
+        <member name="P:Shturman.Models.WeatherForecast.Summary">
+            <summary>Get a description of how the weather will feel.</summary>
+        </member>
+        <member name="P:Shturman.Models.WeatherForecast.TemperatureF">
+            <summary>
+            Gets the Forecast Temperature in Fahrenheit
+            </summary>
+        </member>
         <member name="P:Shturman.Presentation.MainModel.Uno#Extensions#Reactive#Bindings#IModel{Shturman#Presentation#MainViewModel}#ViewModel">
             <inheritdoc />
         </member>
@@ -38,6 +68,77 @@
             Used by the Xamarin Runtime to materialize native 
             objects that may have been collected in the managed world.
             </remarks>
+        </member>
+        <member name="T:Shturman.Serialization.WeatherForecastContext">
+            <summary>
+            Generated class for System.Text.Json Serialization
+            </summary>
+            <remarks>
+            When using the JsonSerializerContext you must add the JsonSerializableAttribute
+            for each type that you may need to serialize / deserialize including both the
+            concrete type and any interface that the concrete type implements.
+            For more information on the JsonSerializerContext see:
+            https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/source-generation?WT.mc_id=DT-MVP-5002924
+            </remarks>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.Double">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.WeatherForecast">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.WeatherForecastArray">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.IEnumerableWeatherForecast">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.IImmutableListWeatherForecast">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.ImmutableListWeatherForecast">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.DateOnly">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.String">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.Default">
+            <summary>
+            The default <see cref="T:System.Text.Json.Serialization.JsonSerializerContext"/> associated with a default <see cref="T:System.Text.Json.JsonSerializerOptions"/> instance.
+            </summary>
+        </member>
+        <member name="P:Shturman.Serialization.WeatherForecastContext.GeneratedSerializerOptions">
+            <summary>
+            The source-generated options associated with this context.
+            </summary>
+        </member>
+        <member name="M:Shturman.Serialization.WeatherForecastContext.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:Shturman.Serialization.WeatherForecastContext.#ctor(System.Text.Json.JsonSerializerOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Shturman.Serialization.WeatherForecastContext.GetTypeInfo(System.Type)">
+            <inheritdoc/>
         </member>
         <member name="F:Shturman.ReactiveViewModelMappings.ViewModelMappings">
             <summary>
@@ -3626,6 +3727,24 @@
             This will set the Window Icon for the given <see cref="T:Microsoft.UI.Xaml.Window" /> using
             the provided UnoIcon.
             </summary>
+        </member>
+        <member name="T:Refit.Implementation.Generated">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.ShturmanServicesEndpointsIApiClient">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.ShturmanServicesEndpointsIApiClient.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ShturmanServicesEndpointsIApiClient.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ShturmanServicesEndpointsIApiClient.GetWeather(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.ShturmanServicesEndpointsIApiClient.Shturman#Services#Endpoints#IApiClient#GetWeather(System.Threading.CancellationToken)">
+            <inheritdoc />
         </member>
     </members>
 </doc>

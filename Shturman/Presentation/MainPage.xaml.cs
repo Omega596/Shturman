@@ -6,12 +6,15 @@ namespace Shturman.Presentation;
 
 public sealed partial class MainPage : Page
 {
+    private const string DefaultText = "Я заблудился";
+    private const string DisableText = "Отключить";
+    private string _string;
     public string CurrentText
     {
-        get => MainModel.CurrentText;
+        get => _string;
         set
         {
-            MainModel.CurrentText = value;
+            _string = value;
             OnPropertyChanged();
         }
     }
@@ -19,25 +22,20 @@ public sealed partial class MainPage : Page
     {
         this.InitializeComponent();
     }
-    private void Button_PointerPressed(object sender, PointerRoutedEventArgs e)
-
-    {
-
-        MainModel.Button = true;
-
-    }
-
-    private void Button_PointerExited(object sender, PointerRoutedEventArgs e)
-
-    {
-
-// In case the pointer exits while pressed, release
-
-        MainModel.Button = false;
-
-    }
     public event PropertyChangedEventHandler PropertyChanged;
 
     protected void OnPropertyChanged([CallerMemberName] string name = null)
         => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+
+    private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+    {
+        if (MainModel.ActivatePath)
+        {
+            MainModel.ActivatePath = false;
+            CurrentText = DefaultText;
+            return;
+        }
+        MainModel.ActivatePath = true;
+        CurrentText = DisableText;
+    }
 }
