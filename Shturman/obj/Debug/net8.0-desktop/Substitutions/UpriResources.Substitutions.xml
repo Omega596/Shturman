@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="Shturman" feature="UPRI_en" featurevalue="false">
+    <resource name="Strings.en.Resources.upri" action="remove" />
+  </assembly>
+  <assembly fullname="Shturman" feature="UPRI_es" featurevalue="false">
+    <resource name="Strings.es.Resources.upri" action="remove" />
+  </assembly>
+  <assembly fullname="Shturman" feature="UPRI_fr" featurevalue="false">
+    <resource name="Strings.fr.Resources.upri" action="remove" />
+  </assembly>
+  <assembly fullname="Shturman" feature="UPRI_pt_br" featurevalue="false">
+    <resource name="Strings.pt-BR.Resources.upri" action="remove" />
+  </assembly>
+</linker>
