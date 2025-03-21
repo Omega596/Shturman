@@ -17,8 +17,11 @@ public partial record MainModel
     private Windows.Devices.Geolocation.Geolocator Geolocation = new();
 
     public List<Geoposition> path = new List<Geoposition>();
-    private static bool _activatePath;
     public static bool ActivatePath = false;
+    public IState<Button> Button => State.Value(this, () => new Button("Я заблудился"));
+
+    public ValueTask ChangeText()
+        => Button.UpdateAsync(c => c?.ChangeText());
 
     public void GetGeoLocation()
     {
@@ -26,7 +29,7 @@ public partial record MainModel
         Geolocation.DesiredAccuracy = PositionAccuracy.High;
         if (access.GetResults() == GeolocationAccessStatus.Allowed)
         {
-            while (_activatePath)
+            while (ActivatePath)
             {
                 path.Add(Geolocation.GetGeopositionAsync().GetResults() ?? throw new NullReferenceException());
                 Thread.Sleep(1000);

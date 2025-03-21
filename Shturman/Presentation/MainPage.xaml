@@ -19,7 +19,16 @@
             <Ellipse StrokeThickness="10" Stroke="#FF808080" Fill="#FF595959" HorizontalAlignment="Center" Width="280" VerticalAlignment="Center" Height="280" Stretch="Fill"/>
             <Image Source="https://userware-xaml-designer-backend-api.azurewebsites.net/images/logo.png" Width="222"/>
         </Grid>
-        <Button Grid.Row="1" Click="ButtonBase_OnClick" HorizontalAlignment="Stretch" BorderBrush="#FF8B0000" BorderThickness="1" VerticalAlignment="Bottom" Background="#FFFF0000" Foreground="#FF8B0000" Content="{x:Bind CurrentText}" Margin="75,0,75,20">
+        <Button Grid.Row="1"
+                Command="{Binding ChangeText}"
+                HorizontalAlignment="Stretch"
+                BorderBrush="#FF8B0000"
+                BorderThickness="1"
+                VerticalAlignment="Bottom"
+                Background="#FFFF0000"
+                Foreground="#FF8B0000"
+                Margin="75,0,75,20"
+                Content = "{Binding Button.Text}">
             <Button.Resources>
                 <Thickness x:Key="ButtonBorderThickness">2</Thickness>
                 <SolidColorBrush x:Key="FilledButtonBackgroundPointerOver" Color="#FFFF0000"/>
