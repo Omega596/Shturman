@@ -1,3 +1,4 @@
+HarfBuzzSharp.dll
 SkiaSharp.dll
 SkiaSharp.SceneGraph.dll
 SkiaSharp.Skottie.dll
@@ -36,6 +37,7 @@ Uno.UI.HotDesign.Xaml.Interactions.dll
 Uno.UI.HotDesign.Xaml.Interactivity.dll
 Uno.UI.Lottie.dll
 Uno.UI.RemoteControl.dll
+Uno.UI.Svg.dll
 Uno.UI.Toolkit.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll

@@ -24,6 +24,7 @@
           https://aka.platform.uno/singleproject-features
         -->
         <UnoFeatures>
+            Svg;
             Material;
             Hosting;
             Toolkit;

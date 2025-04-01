@@ -1,2 +1,0 @@
-values/Styles.xml;values/styles.xml
-values/Styles.xml;values/styles.xml

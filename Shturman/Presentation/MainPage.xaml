@@ -17,7 +17,11 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Ellipse StrokeThickness="10" Stroke="#FF808080" Fill="#FF595959" HorizontalAlignment="Center" Width="280" VerticalAlignment="Center" Height="280" Stretch="Fill"/>
-            <Image Source="https://userware-xaml-designer-backend-api.azurewebsites.net/images/logo.png" Width="222"/>
+            <Image Width="220" Source="Assets/Images/navigatorarrow.png">
+                <Image.RenderTransform>
+                    <RotateTransform Angle="45"/>
+                </Image.RenderTransform>
+            </Image>
         </Grid>
         <Button Grid.Row="1"
                 Command="{Binding ChangeText}"

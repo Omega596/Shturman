@@ -27,6 +27,61 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Android": "7.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Android/7.3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/android-arm/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "android-arm"
+          },
+          "runtimes/android-arm64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "android-arm64"
+          },
+          "runtimes/android-x64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "android-x64"
+          },
+          "runtimes/android-x86/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "android-x86"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
         "type": "package",
         "compile": {
@@ -721,6 +776,15 @@
           }
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -733,6 +797,23 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -807,6 +888,46 @@
         },
         "build": {
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
+        }
+      },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
         }
       },
       "System.Collections.Immutable/8.0.0": {
@@ -2071,6 +2192,24 @@
         },
         "build": {
           "buildTransitive/Uno.WinUI.Lottie.targets": {}
+        }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.android": "2.88.7",
+          "SkiaSharp.Views.Uno.WinUI": "2.88.7",
+          "Svg.Skia": "1.0.0.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.9.2.1": {
@@ -3656,6 +3795,46 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Android": "7.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Android/7.3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-arm/native/libHarfBuzzSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
         "type": "package",
         "compile": {
@@ -4350,6 +4529,15 @@
           }
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -4362,6 +4550,23 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -4421,6 +4626,46 @@
         },
         "build": {
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
+        }
+      },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
         }
       },
       "System.Collections.Immutable/8.0.0": {
@@ -5675,6 +5920,24 @@
         },
         "build": {
           "buildTransitive/Uno.WinUI.Lottie.targets": {}
+        }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.android": "2.88.7",
+          "SkiaSharp.Views.Uno.WinUI": "2.88.7",
+          "Svg.Skia": "1.0.0.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.9.2.1": {
@@ -7260,6 +7523,46 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Android": "7.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Android/7.3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-arm64/native/libHarfBuzzSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
         "type": "package",
         "compile": {
@@ -7954,6 +8257,15 @@
           }
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -7966,6 +8278,23 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -8025,6 +8354,46 @@
         },
         "build": {
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
+        }
+      },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
         }
       },
       "System.Collections.Immutable/8.0.0": {
@@ -9279,6 +9648,24 @@
         },
         "build": {
           "buildTransitive/Uno.WinUI.Lottie.targets": {}
+        }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.android": "2.88.7",
+          "SkiaSharp.Views.Uno.WinUI": "2.88.7",
+          "Svg.Skia": "1.0.0.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.9.2.1": {
@@ -10864,6 +11251,46 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Android": "7.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Android/7.3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-x64/native/libHarfBuzzSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
         "type": "package",
         "compile": {
@@ -11558,6 +11985,15 @@
           }
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -11570,6 +12006,23 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -11629,6 +12082,46 @@
         },
         "build": {
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
+        }
+      },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
         }
       },
       "System.Collections.Immutable/8.0.0": {
@@ -12883,6 +13376,24 @@
         },
         "build": {
           "buildTransitive/Uno.WinUI.Lottie.targets": {}
+        }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.android": "2.88.7",
+          "SkiaSharp.Views.Uno.WinUI": "2.88.7",
+          "Svg.Skia": "1.0.0.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.9.2.1": {
@@ -14468,6 +14979,46 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Android": "7.3.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Android/7.3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-android30.0/_._": {}
+        },
+        "native": {
+          "runtimes/android-x86/native/libHarfBuzzSharp.so": {}
+        },
+        "build": {
+          "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
         "type": "package",
         "compile": {
@@ -15162,6 +15713,15 @@
           }
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -15174,6 +15734,23 @@
         },
         "runtime": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -15233,6 +15810,46 @@
         },
         "build": {
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
+        }
+      },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
         }
       },
       "System.Collections.Immutable/8.0.0": {
@@ -16487,6 +17104,24 @@
         },
         "build": {
           "buildTransitive/Uno.WinUI.Lottie.targets": {}
+        }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.android": "2.88.7",
+          "SkiaSharp.Views.Uno.WinUI": "2.88.7",
+          "Svg.Skia": "1.0.0.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-android/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.9.2.1": {
@@ -18072,11 +18707,20 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "HarfBuzzSharp/7.3.0.1": {
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
         "type": "package",
         "dependencies": {
-          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.1",
-          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.1"
+          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.2",
+          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.2"
         },
         "compile": {
           "lib/net6.0/HarfBuzzSharp.dll": {
@@ -18119,7 +18763,7 @@
           }
         }
       },
-      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -18134,7 +18778,7 @@
           }
         }
       },
-      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -18912,6 +19556,15 @@
           }
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -18925,6 +19578,23 @@
         },
         "runtime": {
           "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -19051,6 +19721,46 @@
         },
         "build": {
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
+        }
+      },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
         }
       },
       "System.Collections.Immutable/8.0.0": {
@@ -20587,6 +21297,22 @@
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.props": {},
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.targets": {}
         }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "System.Json": "4.7.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
+        }
       }
     },
     "net8.0-desktop1.0/android-arm": {
@@ -20615,11 +21341,20 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "HarfBuzzSharp/7.3.0.1": {
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
         "type": "package",
         "dependencies": {
-          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.1",
-          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.1"
+          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.2",
+          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.2"
         },
         "compile": {
           "lib/net6.0/HarfBuzzSharp.dll": {
@@ -20647,7 +21382,7 @@
           "runtimes/linux-arm/native/libHarfBuzzSharp.so": {}
         }
       },
-      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -20656,7 +21391,7 @@
           "lib/net6.0/_._": {}
         }
       },
-      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -21441,6 +22176,15 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -21454,6 +22198,23 @@
         },
         "runtime": {
           "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -21547,6 +22308,46 @@
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
         }
       },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        }
+      },
       "System.Collections.Immutable/8.0.0": {
         "type": "package",
         "compile": {
@@ -23061,6 +23862,22 @@
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.props": {},
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.targets": {}
         }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "System.Json": "4.7.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
+        }
       }
     },
     "net8.0-desktop1.0/android-arm64": {
@@ -23089,11 +23906,20 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "HarfBuzzSharp/7.3.0.1": {
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
         "type": "package",
         "dependencies": {
-          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.1",
-          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.1"
+          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.2",
+          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.2"
         },
         "compile": {
           "lib/net6.0/HarfBuzzSharp.dll": {
@@ -23121,7 +23947,7 @@
           "runtimes/linux-arm64/native/libHarfBuzzSharp.so": {}
         }
       },
-      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -23130,7 +23956,7 @@
           "lib/net6.0/_._": {}
         }
       },
-      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -23915,6 +24741,15 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -23928,6 +24763,23 @@
         },
         "runtime": {
           "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -24021,6 +24873,46 @@
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
         }
       },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        }
+      },
       "System.Collections.Immutable/8.0.0": {
         "type": "package",
         "compile": {
@@ -25535,6 +26427,22 @@
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.props": {},
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.targets": {}
         }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "System.Json": "4.7.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
+        }
       }
     },
     "net8.0-desktop1.0/android-x64": {
@@ -25563,11 +26471,20 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "HarfBuzzSharp/7.3.0.1": {
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
         "type": "package",
         "dependencies": {
-          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.1",
-          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.1"
+          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.2",
+          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.2"
         },
         "compile": {
           "lib/net6.0/HarfBuzzSharp.dll": {
@@ -25595,7 +26512,7 @@
           "runtimes/linux-x64/native/libHarfBuzzSharp.so": {}
         }
       },
-      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -25604,7 +26521,7 @@
           "lib/net6.0/_._": {}
         }
       },
-      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -26389,6 +27306,15 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -26402,6 +27328,23 @@
         },
         "runtime": {
           "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -26495,6 +27438,46 @@
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
         }
       },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        }
+      },
       "System.Collections.Immutable/8.0.0": {
         "type": "package",
         "compile": {
@@ -28009,6 +28992,22 @@
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.props": {},
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.targets": {}
         }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "System.Json": "4.7.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
+        }
       }
     },
     "net8.0-desktop1.0/android-x86": {
@@ -28037,11 +29036,20 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "HarfBuzzSharp/7.3.0.1": {
+      "ExCSS/4.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ExCSS.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ExCSS.dll": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.2": {
         "type": "package",
         "dependencies": {
-          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.1",
-          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.1"
+          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.2",
+          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.2"
         },
         "compile": {
           "lib/net6.0/HarfBuzzSharp.dll": {
@@ -28066,7 +29074,7 @@
           "lib/net6.0/_._": {}
         }
       },
-      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -28075,7 +29083,7 @@
           "lib/net6.0/_._": {}
         }
       },
-      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.1": {
+      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -28860,6 +29868,15 @@
           "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll": {}
         }
       },
+      "ShimSkiaSharp/2.0.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/ShimSkiaSharp.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -28873,6 +29890,23 @@
         },
         "runtime": {
           "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.8": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.2",
+          "SkiaSharp": "2.88.8"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -28961,6 +29995,46 @@
         },
         "build": {
           "buildTransitive/net7.0/SkiaSharp.Views.Uno.WinUI.targets": {}
+        }
+      },
+      "Svg.Custom/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ExCSS": "4.2.3"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Custom.dll": {}
+        }
+      },
+      "Svg.Model/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ShimSkiaSharp": "2.0.0.4",
+          "Svg.Custom": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Model.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Model.dll": {}
+        }
+      },
+      "Svg.Skia/2.0.0.4": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.8",
+          "SkiaSharp.HarfBuzz": "2.88.8",
+          "Svg.Custom": "2.0.0.4",
+          "Svg.Model": "2.0.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Svg.Skia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Svg.Skia.dll": {}
         }
       },
       "System.Collections.Immutable/8.0.0": {
@@ -30477,6 +31551,22 @@
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.props": {},
           "buildTransitive/Uno.WinUI.Runtime.Skia.X11.targets": {}
         }
+      },
+      "Uno.WinUI.Svg/5.6.33": {
+        "type": "package",
+        "dependencies": {
+          "System.Json": "4.7.1",
+          "Uno.WinUI": "5.6.33"
+        },
+        "compile": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Uno.UI.Svg.dll": {}
+        },
+        "build": {
+          "buildTransitive/Uno.WinUI.Svg.targets": {}
+        }
       }
     }
   },
@@ -30545,16 +31635,34 @@
         "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
       ]
     },
-    "HarfBuzzSharp/7.3.0.1": {
-      "sha512": "/6z6TQBqWWbVpLUw7E/82HZKLT3OAzg/w6z8I6JFNFcYa3nM9RnZ8XGos9nD4buAzThLHpqPw/rb8FdZXEORAQ==",
+    "ExCSS/4.2.3": {
+      "sha512": "SyeAfu2wL5247sipJoPUzQfjiwQtfSd8hN4IbgoyVcDx4PP6Dud4znwPRibWQzLtTlUxYYcbf5f4p+EfFC7KtQ==",
       "type": "package",
-      "path": "harfbuzzsharp/7.3.0.1",
+      "path": "excss/4.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "excss.4.2.3.nupkg.sha512",
+        "excss.nuspec",
+        "lib/net48/ExCSS.dll",
+        "lib/net6.0/ExCSS.dll",
+        "lib/net7.0/ExCSS.dll",
+        "lib/netcoreapp3.1/ExCSS.dll",
+        "lib/netstandard2.0/ExCSS.dll",
+        "lib/netstandard2.1/ExCSS.dll",
+        "readme.md"
+      ]
+    },
+    "HarfBuzzSharp/7.3.0.2": {
+      "sha512": "0tCd6HyCmNsX/DniCp2b00fo0xPbdNwKOs9BxxyT8oOOuMlWjcSFwzONKyeckCKVBFEsbSmsAHPDTqxoSDwZMg==",
+      "type": "package",
+      "path": "harfbuzzsharp/7.3.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "THIRD-PARTY-NOTICES.txt",
-        "harfbuzzsharp.7.3.0.1.nupkg.sha512",
+        "harfbuzzsharp.7.3.0.2.nupkg.sha512",
         "harfbuzzsharp.nuspec",
         "lib/monoandroid1.0/HarfBuzzSharp.dll",
         "lib/monoandroid1.0/HarfBuzzSharp.pdb",
@@ -30615,6 +31723,29 @@
         "lib/xamarinwatchos1.0/HarfBuzzSharp.xml"
       ]
     },
+    "HarfBuzzSharp.NativeAssets.Android/7.3.0.2": {
+      "sha512": "WvdlvWT4XOqAx998vMWPKS5uBU9oLoxJ79ROwzxLp+45CXSqa5ZzP0bNMtrOgTuUcn9PBSUaE6S/hn9kCnDYMQ==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.android/7.3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid1.0/HarfBuzzSharp.NativeAssets.Android.targets",
+        "build/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets",
+        "buildTransitive/monoandroid1.0/HarfBuzzSharp.NativeAssets.Android.targets",
+        "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets",
+        "harfbuzzsharp.nativeassets.android.7.3.0.2.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.android.nuspec",
+        "lib/monoandroid1.0/_._",
+        "lib/net6.0-android30.0/_._",
+        "runtimes/android-arm/native/libHarfBuzzSharp.so",
+        "runtimes/android-arm64/native/libHarfBuzzSharp.so",
+        "runtimes/android-x64/native/libHarfBuzzSharp.so",
+        "runtimes/android-x86/native/libHarfBuzzSharp.so"
+      ]
+    },
     "HarfBuzzSharp.NativeAssets.Linux/7.3.0.1": {
       "sha512": "8CH54W2peBhE3vBN10gx4+2lLTrVoHAY+OrTO2OqXo3QkKJaH3hMG6dTKSWOy88hr0xjQ4j4jBYdYBjMcCK8Xw==",
       "type": "package",
@@ -30638,10 +31769,10 @@
         "runtimes/linux-x64/native/libHarfBuzzSharp.so"
       ]
     },
-    "HarfBuzzSharp.NativeAssets.macOS/7.3.0.1": {
-      "sha512": "4i6e8WhXF04At1rZ904xjt5g10W86u6B2SpzWAw+cfY4mzfyUV0hgZHIWsE6PsW8a9bP/bSdsZx/Rt4UIroi4w==",
+    "HarfBuzzSharp.NativeAssets.macOS/7.3.0.2": {
+      "sha512": "nycYH/WLJ6ogm+I+QSFCdPJsdxSb5GANWYbQyp1vsd/KjXN56RVUJWPhbgP2GKb/Y7mrsHM7EProqVXlO/EMsA==",
       "type": "package",
-      "path": "harfbuzzsharp.nativeassets.macos/7.3.0.1",
+      "path": "harfbuzzsharp.nativeassets.macos/7.3.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -30653,7 +31784,7 @@
         "buildTransitive/net462/HarfBuzzSharp.NativeAssets.macOS.targets",
         "buildTransitive/net6.0-macos10.15/HarfBuzzSharp.NativeAssets.macOS.targets",
         "buildTransitive/xamarinmac2.0/HarfBuzzSharp.NativeAssets.macOS.targets",
-        "harfbuzzsharp.nativeassets.macos.7.3.0.1.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.macos.7.3.0.2.nupkg.sha512",
         "harfbuzzsharp.nativeassets.macos.nuspec",
         "lib/net462/_._",
         "lib/net6.0-macos10.15/_._",
@@ -30664,10 +31795,10 @@
         "runtimes/osx/native/libHarfBuzzSharp.dylib"
       ]
     },
-    "HarfBuzzSharp.NativeAssets.Win32/7.3.0.1": {
-      "sha512": "NxzjhGcY7fYCu51BsanQurXXyqGogZiMzFBpDrZg49jNhT/S0QWYe/uvmP9YbwagprKQ+2tbGT0cw1BvxJciXQ==",
+    "HarfBuzzSharp.NativeAssets.Win32/7.3.0.2": {
+      "sha512": "DpF9JBzwws2dupOLnjME65hxQWWbN/GD40AoTkwB4S05WANvxo3n81AnQJKxWDCnrWfWhLPB36OF27TvEqzb/A==",
       "type": "package",
-      "path": "harfbuzzsharp.nativeassets.win32/7.3.0.1",
+      "path": "harfbuzzsharp.nativeassets.win32/7.3.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -30675,7 +31806,7 @@
         "THIRD-PARTY-NOTICES.txt",
         "build/net462/HarfBuzzSharp.NativeAssets.Win32.targets",
         "buildTransitive/net462/HarfBuzzSharp.NativeAssets.Win32.targets",
-        "harfbuzzsharp.nativeassets.win32.7.3.0.1.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.win32.7.3.0.2.nupkg.sha512",
         "harfbuzzsharp.nativeassets.win32.nuspec",
         "lib/net462/_._",
         "lib/net6.0/_._",
@@ -31971,6 +33102,21 @@
         "runtimes/unix/lib/netstandard1.0/System.Private.Uri.dll"
       ]
     },
+    "ShimSkiaSharp/2.0.0.4": {
+      "sha512": "7UDQA2c0k56I8yvgHWoRTq4JUOLU9alajszvixR4IDhXgTJaEHqXqzu618Dh26K31zvKMR4ndc9y+OhtuDdhqQ==",
+      "type": "package",
+      "path": "shimskiasharp/2.0.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/ShimSkiaSharp.dll",
+        "lib/net6.0/ShimSkiaSharp.dll",
+        "lib/net8.0/ShimSkiaSharp.dll",
+        "lib/netstandard2.0/ShimSkiaSharp.dll",
+        "shimskiasharp.2.0.0.4.nupkg.sha512",
+        "shimskiasharp.nuspec"
+      ]
+    },
     "SkiaSharp/2.88.9": {
       "sha512": "3MD5VHjXXieSHCleRLuaTXmL2pD0mB7CcOB1x2kA1I4bhptf4e3R27iM93264ZYuAq6mkUyX5XbcxnZvMJYc1Q==",
       "type": "package",
@@ -32043,6 +33189,36 @@
         "lib/xamarinwatchos1.0/SkiaSharp.xml",
         "skiasharp.2.88.9.nupkg.sha512",
         "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.HarfBuzz/2.88.8": {
+      "sha512": "ajSyJ2D17R0kZ4FwKwFrJTsYs3D3Y9iRBLhNecROR7dOxC6VTFaMPXJuwQB8KYpAqgmb2JAJFEgZ3i8MaaIw1g==",
+      "type": "package",
+      "path": "skiasharp.harfbuzz/2.88.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net462/SkiaSharp.HarfBuzz.dll",
+        "lib/net462/SkiaSharp.HarfBuzz.pdb",
+        "lib/net462/SkiaSharp.HarfBuzz.xml",
+        "lib/net6.0/SkiaSharp.HarfBuzz.dll",
+        "lib/net6.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/net6.0/SkiaSharp.HarfBuzz.xml",
+        "lib/netcoreapp3.1/SkiaSharp.HarfBuzz.dll",
+        "lib/netcoreapp3.1/SkiaSharp.HarfBuzz.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.HarfBuzz.xml",
+        "lib/netstandard1.3/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard1.3/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard1.3/SkiaSharp.HarfBuzz.xml",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.xml",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.xml",
+        "skiasharp.harfbuzz.2.88.8.nupkg.sha512",
+        "skiasharp.harfbuzz.nuspec"
       ]
     },
     "SkiaSharp.NativeAssets.Android/2.88.9": {
@@ -32344,6 +33520,50 @@
         "uno-runtime/netstandard2.0/webassembly/SkiaSharp.Views.Windows.dll",
         "uno-runtime/netstandard2.0/webassembly/SkiaSharp.Views.Windows.pdb",
         "uno-runtime/netstandard2.0/webassembly/SkiaSharp.Views.Windows.xml"
+      ]
+    },
+    "Svg.Custom/2.0.0.4": {
+      "sha512": "RTA2brxnCbPi+hR8Z6qRGNA0aB7CGR2dBn57xmK3KXbuZPmiV1OUEjuI5++oMN6HcnEMIXSa8UkHTanjNt3eMA==",
+      "type": "package",
+      "path": "svg.custom/2.0.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Svg.Custom.dll",
+        "lib/net8.0/Svg.Custom.dll",
+        "lib/netstandard2.0/Svg.Custom.dll",
+        "svg.custom.2.0.0.4.nupkg.sha512",
+        "svg.custom.nuspec"
+      ]
+    },
+    "Svg.Model/2.0.0.4": {
+      "sha512": "u3O0EW7w4PUI7hyYKeH9F5hm1KDgRnz3KRutwTyRwGia/MqCuYF6nf9HeNiw7rOuX0tR14wa8peQ/rw9RpWSOQ==",
+      "type": "package",
+      "path": "svg.model/2.0.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Svg.Model.dll",
+        "lib/net6.0/Svg.Model.dll",
+        "lib/net8.0/Svg.Model.dll",
+        "lib/netstandard2.0/Svg.Model.dll",
+        "svg.model.2.0.0.4.nupkg.sha512",
+        "svg.model.nuspec"
+      ]
+    },
+    "Svg.Skia/2.0.0.4": {
+      "sha512": "RlM5lc+y9yIXdBnMKvuyutBdylSWGTfg7hqiGz6dLcJdOYiKQS+WcCECC+pYMTauSNeTQX77YMryMKiG1lMFyQ==",
+      "type": "package",
+      "path": "svg.skia/2.0.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Svg.Skia.dll",
+        "lib/net6.0/Svg.Skia.dll",
+        "lib/net8.0/Svg.Skia.dll",
+        "lib/netstandard2.0/Svg.Skia.dll",
+        "svg.skia.2.0.0.4.nupkg.sha512",
+        "svg.skia.nuspec"
       ]
     },
     "System.Collections.Immutable/8.0.0": {
@@ -35750,6 +36970,35 @@
         "uno.winui.runtime.skia.x11.nuspec"
       ]
     },
+    "Uno.WinUI.Svg/5.6.33": {
+      "sha512": "ujLL3Sx5GzHvyGF2bY1OWASzKJItVCu8gSPGLaG0htb4fyan7xZGGegxXhCziEh01NPDMuXJW9HL1kggMaCOEA==",
+      "type": "package",
+      "path": "uno.winui.svg/5.6.33",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/Uno.WinUI.Svg.targets",
+        "lib/net8.0-android/Uno.UI.Svg.dll",
+        "lib/net8.0-ios17.0/Uno.UI.Svg.dll",
+        "lib/net8.0-maccatalyst17.0/Uno.UI.Svg.dll",
+        "lib/net8.0/Uno.UI.Svg.dll",
+        "lib/net9.0-android/Uno.UI.Svg.dll",
+        "lib/net9.0-ios18.0/Uno.UI.Svg.dll",
+        "lib/net9.0-maccatalyst18.0/Uno.UI.Svg.dll",
+        "lib/net9.0/Uno.UI.Svg.dll",
+        "uno-runtime/net8.0/skia/Uno.UI.Svg.deps.json",
+        "uno-runtime/net8.0/skia/Uno.UI.Svg.dll",
+        "uno-runtime/net8.0/skia/Uno.UI.Svg.dll.config",
+        "uno-runtime/net8.0/skia/Uno.UI.Svg.pdb",
+        "uno-runtime/net9.0/skia/Uno.UI.Svg.deps.json",
+        "uno-runtime/net9.0/skia/Uno.UI.Svg.dll",
+        "uno-runtime/net9.0/skia/Uno.UI.Svg.dll.config",
+        "uno-runtime/net9.0/skia/Uno.UI.Svg.pdb",
+        "uno.png",
+        "uno.winui.svg.5.6.33.nupkg.sha512",
+        "uno.winui.svg.nuspec"
+      ]
+    },
     "Xamarin.AndroidX.Activity/1.9.2.1": {
       "sha512": "T5UOWgzjAw3w0hHKhoYuK6xtTN2f2Cyyl02756xN83I6ieb536DjqUyAdnY9hdPCaOYYF2KFZF4o8dwuAnhlOQ==",
       "type": "package",
@@ -37349,6 +38598,7 @@
       "Microsoft.NET.ILLink.Tasks >= 8.0.14",
       "SkiaSharp.Skottie >= 2.88.9",
       "SkiaSharp.Views.Uno.WinUI >= 2.88.9",
+      "Svg.Skia >= 2.0.0.4",
       "Uno.Extensions.Configuration >= 5.2.7",
       "Uno.Extensions.Core.WinUI >= 5.2.7",
       "Uno.Extensions.Hosting.WinUI >= 5.2.7",
@@ -37375,6 +38625,7 @@
       "Uno.WinUI >= 5.6.33",
       "Uno.WinUI.DevServer >= 5.6.33",
       "Uno.WinUI.Lottie >= 5.6.33",
+      "Uno.WinUI.Svg >= 5.6.33",
       "Xamarin.AndroidX.Activity >= 1.9.2.1",
       "Xamarin.AndroidX.AppCompat >= 1.7.0.3",
       "Xamarin.AndroidX.Browser >= 1.8.0.6",
@@ -37387,6 +38638,7 @@
       "Microsoft.Extensions.Logging.Console >= 8.0.1",
       "SkiaSharp.Skottie >= 2.88.9",
       "SkiaSharp.Views.Uno.WinUI >= 2.88.9",
+      "Svg.Skia >= 2.0.0.4",
       "Uno.Extensions.Configuration >= 5.2.7",
       "Uno.Extensions.Core.WinUI >= 5.2.7",
       "Uno.Extensions.Hosting.WinUI >= 5.2.7",
@@ -37416,7 +38668,8 @@
       "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer >= 5.6.33",
       "Uno.WinUI.Runtime.Skia.MacOS >= 5.6.33",
       "Uno.WinUI.Runtime.Skia.Wpf >= 5.6.33",
-      "Uno.WinUI.Runtime.Skia.X11 >= 5.6.33"
+      "Uno.WinUI.Runtime.Skia.X11 >= 5.6.33",
+      "Uno.WinUI.Svg >= 5.6.33"
     ]
   },
   "packageFolders": {
@@ -37425,11 +38678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/libc6/Projects/Shturman/Shturman/Shturman.csproj",
+      "projectUniqueName": "/home/libc6/Projects/Rider/Shturman/Shturman/Shturman.csproj",
       "projectName": "Shturman",
-      "projectPath": "/home/libc6/Projects/Shturman/Shturman/Shturman.csproj",
+      "projectPath": "/home/libc6/Projects/Rider/Shturman/Shturman/Shturman.csproj",
       "packagesPath": "/home/libc6/.nuget/packages/",
-      "outputPath": "/home/libc6/Projects/Shturman/Shturman/obj/",
+      "outputPath": "/home/libc6/Projects/Rider/Shturman/Shturman/obj/",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "centralPackageVersionsManagementEnabled": true,
@@ -37492,6 +38745,11 @@
           "SkiaSharp.Views.Uno.WinUI": {
             "target": "Package",
             "version": "[2.88.9, )",
+            "autoReferenced": true
+          },
+          "Svg.Skia": {
+            "target": "Package",
+            "version": "[2.0.0.4, )",
             "autoReferenced": true
           },
           "Uno.Extensions.Configuration": {
@@ -37627,6 +38885,11 @@
             "version": "[5.6.33, )",
             "autoReferenced": true
           },
+          "Uno.WinUI.Svg": {
+            "target": "Package",
+            "version": "[5.6.33, )",
+            "autoReferenced": true
+          },
           "Xamarin.AndroidX.Activity": {
             "target": "Package",
             "version": "[1.9.2.1, )",
@@ -37730,6 +38993,11 @@
           "SkiaSharp.Views.Uno.WinUI": {
             "target": "Package",
             "version": "[2.88.9, )",
+            "autoReferenced": true
+          },
+          "Svg.Skia": {
+            "target": "Package",
+            "version": "[2.0.0.4, )",
             "autoReferenced": true
           },
           "Uno.Extensions.Configuration": {
@@ -37881,6 +39149,11 @@
             "autoReferenced": true
           },
           "Uno.WinUI.Runtime.Skia.X11": {
+            "target": "Package",
+            "version": "[5.6.33, )",
+            "autoReferenced": true
+          },
+          "Uno.WinUI.Svg": {
             "target": "Package",
             "version": "[5.6.33, )",
             "autoReferenced": true

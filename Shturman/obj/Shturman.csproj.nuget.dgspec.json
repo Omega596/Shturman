@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/libc6/Projects/Shturman/Shturman/Shturman.csproj": {}
+    "/home/libc6/Projects/Rider/Shturman/Shturman/Shturman.csproj": {}
   },
   "projects": {
-    "/home/libc6/Projects/Shturman/Shturman/Shturman.csproj": {
+    "/home/libc6/Projects/Rider/Shturman/Shturman/Shturman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/libc6/Projects/Shturman/Shturman/Shturman.csproj",
+        "projectUniqueName": "/home/libc6/Projects/Rider/Shturman/Shturman/Shturman.csproj",
         "projectName": "Shturman",
-        "projectPath": "/home/libc6/Projects/Shturman/Shturman/Shturman.csproj",
+        "projectPath": "/home/libc6/Projects/Rider/Shturman/Shturman/Shturman.csproj",
         "packagesPath": "/home/libc6/.nuget/packages/",
-        "outputPath": "/home/libc6/Projects/Shturman/Shturman/obj/",
+        "outputPath": "/home/libc6/Projects/Rider/Shturman/Shturman/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "centralPackageVersionsManagementEnabled": true,
@@ -74,6 +74,11 @@
             "SkiaSharp.Views.Uno.WinUI": {
               "target": "Package",
               "version": "[2.88.9, )",
+              "autoReferenced": true
+            },
+            "Svg.Skia": {
+              "target": "Package",
+              "version": "[2.0.0.4, )",
               "autoReferenced": true
             },
             "Uno.Extensions.Configuration": {
@@ -209,6 +214,11 @@
               "version": "[5.6.33, )",
               "autoReferenced": true
             },
+            "Uno.WinUI.Svg": {
+              "target": "Package",
+              "version": "[5.6.33, )",
+              "autoReferenced": true
+            },
             "Xamarin.AndroidX.Activity": {
               "target": "Package",
               "version": "[1.9.2.1, )",
@@ -312,6 +322,11 @@
             "SkiaSharp.Views.Uno.WinUI": {
               "target": "Package",
               "version": "[2.88.9, )",
+              "autoReferenced": true
+            },
+            "Svg.Skia": {
+              "target": "Package",
+              "version": "[2.0.0.4, )",
               "autoReferenced": true
             },
             "Uno.Extensions.Configuration": {
@@ -463,6 +478,11 @@
               "autoReferenced": true
             },
             "Uno.WinUI.Runtime.Skia.X11": {
+              "target": "Package",
+              "version": "[5.6.33, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Svg": {
               "target": "Package",
               "version": "[5.6.33, )",
               "autoReferenced": true

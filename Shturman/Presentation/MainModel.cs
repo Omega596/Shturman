@@ -14,14 +14,18 @@ public partial record MainModel
         Task.Run(GetGeoLocation);
     }
 
-    private Windows.Devices.Geolocation.Geolocator Geolocation = new();
+    private Geolocator Geolocation = new();
 
-    public List<Geoposition> path = new List<Geoposition>();
+    public List<Geoposition> path = new();
     public static bool ActivatePath = false;
     public IState<Button> Button => State.Value(this, () => new Button("Я заблудился"));
+    
+    public IState<Compass> Compass => State.Value(this, () => new Compass());
 
     public ValueTask ChangeText()
         => Button.UpdateAsync(c => c?.ChangeText());
+    
+        
 
     public void GetGeoLocation()
     {
