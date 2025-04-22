@@ -39,6 +39,7 @@
         </UnoFeatures>
     </PropertyGroup>
     <ItemGroup>
+      <Folder Include="obj\Debug\" />
       <Folder Include="Serialization\" />
       <Folder Include="Services\Caching\" />
     </ItemGroup>
