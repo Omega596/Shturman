@@ -713,17 +713,17 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.14": {
+      "Microsoft.NET.ILLink.Tasks/8.0.13": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -1957,83 +1957,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.UniversalImageLoader/1.9.37": {
@@ -2145,18 +2079,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -2165,12 +2098,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -2939,14 +2872,14 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Legacy.Support.V4.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.8.2.1",
-          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.5.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
+          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.6",
+          "Xamarin.Kotlin.StdLib": "2.0.20",
           "Xamarin.KotlinX.AtomicFU": "0.25.0.3",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.dll": {
@@ -2962,12 +2895,12 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation.Jvm": "1.8.2.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.Kotlin.StdLib": "2.0.20",
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.Jvm.dll": {
@@ -3571,6 +3504,13 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.11.0.3": {
         "type": "package",
         "dependencies": {
@@ -3636,6 +3576,97 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
+      "Xamarin.GooglePlayServices.Base/118.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Location/121.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.5.0",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0",
+          "Xamarin.Kotlin.StdLib": "2.0.0.1",
+          "Xamarin.KotlinX.Coroutines.Android": "1.8.1.1",
+          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Location.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.targets": {}
+        }
+      },
       "Xamarin.Jetbrains.Annotations/24.1.0.8": {
         "type": "package",
         "compile": {
@@ -3652,7 +3683,7 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/2.0.10.1": {
+      "Xamarin.Kotlin.StdLib/2.0.20": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8"
@@ -3729,10 +3760,10 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Android.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core/1.9.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.dll": {
@@ -3748,11 +3779,11 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.9.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1"
+          "Xamarin.Kotlin.StdLib": "2.0.20"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.Jvm.dll": {
@@ -4466,17 +4497,17 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.14": {
+      "Microsoft.NET.ILLink.Tasks/8.0.13": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -5685,83 +5716,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.UniversalImageLoader/1.9.37": {
@@ -5873,18 +5838,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -5893,12 +5857,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -6667,14 +6631,14 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Legacy.Support.V4.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.8.2.1",
-          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.5.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
+          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.6",
+          "Xamarin.Kotlin.StdLib": "2.0.20",
           "Xamarin.KotlinX.AtomicFU": "0.25.0.3",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.dll": {
@@ -6690,12 +6654,12 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation.Jvm": "1.8.2.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.Kotlin.StdLib": "2.0.20",
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.Jvm.dll": {
@@ -7299,6 +7263,13 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.11.0.3": {
         "type": "package",
         "dependencies": {
@@ -7364,6 +7335,97 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
+      "Xamarin.GooglePlayServices.Base/118.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Location/121.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.5.0",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0",
+          "Xamarin.Kotlin.StdLib": "2.0.0.1",
+          "Xamarin.KotlinX.Coroutines.Android": "1.8.1.1",
+          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Location.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.targets": {}
+        }
+      },
       "Xamarin.Jetbrains.Annotations/24.1.0.8": {
         "type": "package",
         "compile": {
@@ -7380,7 +7442,7 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/2.0.10.1": {
+      "Xamarin.Kotlin.StdLib/2.0.20": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8"
@@ -7457,10 +7519,10 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Android.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core/1.9.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.dll": {
@@ -7476,11 +7538,11 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.9.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1"
+          "Xamarin.Kotlin.StdLib": "2.0.20"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.Jvm.dll": {
@@ -8194,17 +8256,17 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.14": {
+      "Microsoft.NET.ILLink.Tasks/8.0.13": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -9413,83 +9475,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.UniversalImageLoader/1.9.37": {
@@ -9601,18 +9597,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -9621,12 +9616,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -10395,14 +10390,14 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Legacy.Support.V4.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.8.2.1",
-          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.5.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
+          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.6",
+          "Xamarin.Kotlin.StdLib": "2.0.20",
           "Xamarin.KotlinX.AtomicFU": "0.25.0.3",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.dll": {
@@ -10418,12 +10413,12 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation.Jvm": "1.8.2.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.Kotlin.StdLib": "2.0.20",
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.Jvm.dll": {
@@ -11027,6 +11022,13 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.11.0.3": {
         "type": "package",
         "dependencies": {
@@ -11092,6 +11094,97 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
+      "Xamarin.GooglePlayServices.Base/118.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Location/121.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.5.0",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0",
+          "Xamarin.Kotlin.StdLib": "2.0.0.1",
+          "Xamarin.KotlinX.Coroutines.Android": "1.8.1.1",
+          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Location.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.targets": {}
+        }
+      },
       "Xamarin.Jetbrains.Annotations/24.1.0.8": {
         "type": "package",
         "compile": {
@@ -11108,7 +11201,7 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/2.0.10.1": {
+      "Xamarin.Kotlin.StdLib/2.0.20": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8"
@@ -11185,10 +11278,10 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Android.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core/1.9.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.dll": {
@@ -11204,11 +11297,11 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.9.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1"
+          "Xamarin.Kotlin.StdLib": "2.0.20"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.Jvm.dll": {
@@ -11922,17 +12015,17 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.14": {
+      "Microsoft.NET.ILLink.Tasks/8.0.13": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -13141,83 +13234,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.UniversalImageLoader/1.9.37": {
@@ -13329,18 +13356,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -13349,12 +13375,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -14123,14 +14149,14 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Legacy.Support.V4.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.8.2.1",
-          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.5.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
+          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.6",
+          "Xamarin.Kotlin.StdLib": "2.0.20",
           "Xamarin.KotlinX.AtomicFU": "0.25.0.3",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.dll": {
@@ -14146,12 +14172,12 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation.Jvm": "1.8.2.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.Kotlin.StdLib": "2.0.20",
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.Jvm.dll": {
@@ -14755,6 +14781,13 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.11.0.3": {
         "type": "package",
         "dependencies": {
@@ -14820,6 +14853,97 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
+      "Xamarin.GooglePlayServices.Base/118.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Location/121.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.5.0",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0",
+          "Xamarin.Kotlin.StdLib": "2.0.0.1",
+          "Xamarin.KotlinX.Coroutines.Android": "1.8.1.1",
+          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Location.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.targets": {}
+        }
+      },
       "Xamarin.Jetbrains.Annotations/24.1.0.8": {
         "type": "package",
         "compile": {
@@ -14836,7 +14960,7 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/2.0.10.1": {
+      "Xamarin.Kotlin.StdLib/2.0.20": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8"
@@ -14913,10 +15037,10 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Android.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core/1.9.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.dll": {
@@ -14932,11 +15056,11 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.9.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1"
+          "Xamarin.Kotlin.StdLib": "2.0.20"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.Jvm.dll": {
@@ -15650,17 +15774,17 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.NET.ILLink.Tasks/8.0.14": {
+      "Microsoft.NET.ILLink.Tasks/8.0.13": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -16869,83 +16993,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-android34.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactions.xml;.Interactivity.pdb;.Interactivity.xml;.pdb"
-          },
-          "lib/net8.0-android34.0/Uno.UI.HotDesign.dll": {
-            "related": ".aar;.Abstractions.pdb;.Client.Core.pdb;.Client.Core.xml;.Client.pdb;.Client.xml;.CommunityToolkit.pdb;.CommunityToolkit.xml;.Hierarchy.pdb;.Hierarchy.xml;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.PropertyGrid.xml;.Toolbox.pdb;.Toolbox.xml;.Xaml.Interactions.pdb;.Xaml.Interactions.xml;.Xaml.Interactivity.pdb;.Xaml.Interactivity.xml;.Xaml.pdb;.xml"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.UniversalImageLoader/1.9.37": {
@@ -17057,18 +17115,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-android/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0-android/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -17077,12 +17134,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -17851,14 +17908,14 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Legacy.Support.V4.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation": "1.8.2.1",
-          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.5.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
+          "Xamarin.AndroidX.Lifecycle.Common.Jvm": "2.8.6",
+          "Xamarin.Kotlin.StdLib": "2.0.20",
           "Xamarin.KotlinX.AtomicFU": "0.25.0.3",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.dll": {
@@ -17874,12 +17931,12 @@
           "buildTransitive/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.targets": {}
         }
       },
-      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.5.1": {
+      "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.AndroidX.Annotation.Jvm": "1.8.2.1",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1",
-          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.3"
+          "Xamarin.Kotlin.StdLib": "2.0.20",
+          "Xamarin.KotlinX.Coroutines.Core": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.Jvm.dll": {
@@ -18483,6 +18540,13 @@
           "buildTransitive/net7.0-android33.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.11.0.3": {
         "type": "package",
         "dependencies": {
@@ -18548,6 +18612,97 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
+      "Xamarin.GooglePlayServices.Base/118.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.4.0.6",
+          "Xamarin.AndroidX.Core": "1.13.1.3",
+          "Xamarin.AndroidX.Fragment": "1.8.1.1",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Location/121.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.5.0",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0",
+          "Xamarin.GooglePlayServices.Tasks": "118.2.0",
+          "Xamarin.Kotlin.StdLib": "2.0.0.1",
+          "Xamarin.KotlinX.Coroutines.Android": "1.8.1.1",
+          "Xamarin.KotlinX.Coroutines.Core": "1.8.1.1"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Location.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.4.0"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.targets": {}
+        }
+      },
       "Xamarin.Jetbrains.Annotations/24.1.0.8": {
         "type": "package",
         "compile": {
@@ -18564,7 +18719,7 @@
           "buildTransitive/net8.0-android34.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/2.0.10.1": {
+      "Xamarin.Kotlin.StdLib/2.0.20": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8"
@@ -18641,10 +18796,10 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Android.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core/1.9.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.8.1.3"
+          "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.9.0"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.dll": {
@@ -18660,11 +18815,11 @@
           "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.targets": {}
         }
       },
-      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.8.1.3": {
+      "Xamarin.KotlinX.Coroutines.Core.Jvm/1.9.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Jetbrains.Annotations": "24.1.0.8",
-          "Xamarin.Kotlin.StdLib": "2.0.10.1"
+          "Xamarin.Kotlin.StdLib": "2.0.20"
         },
         "compile": {
           "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.Jvm.dll": {
@@ -19432,12 +19587,12 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
@@ -19512,12 +19667,12 @@
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         }
@@ -20859,12 +21014,12 @@
           "Uno.WinUI": "5.4.22"
         },
         "compile": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         }
@@ -20948,94 +21103,28 @@
           "Uno.WinUI.Lottie": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.Wasm.WebSockets/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -21114,18 +21203,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -21134,12 +21222,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -22031,12 +22119,12 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
@@ -22095,12 +22183,12 @@
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         }
@@ -23430,12 +23518,12 @@
           "Uno.WinUI": "5.4.22"
         },
         "compile": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         }
@@ -23519,94 +23607,28 @@
           "Uno.WinUI.Lottie": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.Wasm.WebSockets/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -23685,18 +23707,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -23705,12 +23726,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -24596,12 +24617,12 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
@@ -24660,12 +24681,12 @@
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         }
@@ -25995,12 +26016,12 @@
           "Uno.WinUI": "5.4.22"
         },
         "compile": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         }
@@ -26084,94 +26105,28 @@
           "Uno.WinUI.Lottie": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.Wasm.WebSockets/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -26250,18 +26205,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -26270,12 +26224,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -27161,12 +27115,12 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
@@ -27225,12 +27179,12 @@
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         }
@@ -28560,12 +28514,12 @@
           "Uno.WinUI": "5.4.22"
         },
         "compile": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         }
@@ -28649,94 +28603,28 @@
           "Uno.WinUI.Lottie": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.Wasm.WebSockets/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -28815,18 +28703,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -28835,12 +28722,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -29723,12 +29610,12 @@
       "Microsoft.IO.RecyclableMemoryStream/2.3.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+          "lib/net5.0/_._": {
             "related": ".xml"
           }
         }
@@ -29787,12 +29674,12 @@
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         }
@@ -31119,12 +31006,12 @@
           "Uno.WinUI": "5.4.22"
         },
         "compile": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.Toolkit.Skia.WinUI.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         }
@@ -31208,94 +31095,28 @@
           "Uno.WinUI.Lottie": "5.6.22"
         },
         "compile": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "runtime": {
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net8.0-desktop1.0/_._": {
             "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net8.0-desktop1.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/_._": {}
         }
       },
       "Uno.Wasm.WebSockets/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -31374,18 +31195,17 @@
           "Uno.WinUI.DevServer.Messaging": "5.6.33"
         },
         "compile": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.UI.RemoteControl.dll": {
+          "lib/net8.0/_._": {
             "related": ".pdb"
           }
         },
         "build": {
-          "buildTransitive/Uno.WinUI.DevServer.props": {},
-          "buildTransitive/Uno.WinUI.DevServer.targets": {}
+          "buildTransitive/_._": {}
         }
       },
       "Uno.WinUI.DevServer.Messaging/5.6.33": {
@@ -31394,12 +31214,12 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll": {
+          "lib/netstandard2.0/_._": {
             "related": ".pdb"
           }
         }
@@ -32802,10 +32622,10 @@
         "microsoft.io.recyclablememorystream.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/8.0.14": {
-      "sha512": "4U2fd7PexNKrK5ZqfqIcXZj9/lRRjFsLgA/pxuFQTuGQuLYP/+7yACz/j7EmWbEj/fspOf4mafi/vHIy/rKDzQ==",
+    "Microsoft.NET.ILLink.Tasks/8.0.13": {
+      "sha512": "R19ZTaRiQAK+xo9ZwaHbF/1vb1wwR1Wn5+sqp9v8+CDjbdS8R6qftKdw0VSXWKm7VAMi7P+NCU4zxDzhEWcAwQ==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.14",
+      "path": "microsoft.net.illink.tasks/8.0.13",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -32819,7 +32639,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.14.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.13.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -37736,10 +37556,10 @@
         "xamarin.androidx.legacy.support.v4.nuspec"
       ]
     },
-    "Xamarin.AndroidX.Lifecycle.Common/2.8.5.1": {
-      "sha512": "7g+KQSqSqPEo3ui4TplYz3beZt6VhvhSn0gqYQoKSs4fUwY0mYJOBUx4hWgRK9gxKsN77yaA0U3OcP3v2Ctr4A==",
+    "Xamarin.AndroidX.Lifecycle.Common/2.8.6": {
+      "sha512": "zLJyNHnX2lBeOR8XmC7OGnf4VGyK4ulhEJlsSibLHr45gPCsJB9HPyYBImsVNbQ6gq75eGI0MiDGpd4LWN4JJA==",
       "type": "package",
-      "path": "xamarin.androidx.lifecycle.common/2.8.5.1",
+      "path": "xamarin.androidx.lifecycle.common/2.8.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37753,14 +37573,14 @@
         "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.pdb",
         "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.xml",
         "readme.md",
-        "xamarin.androidx.lifecycle.common.2.8.5.1.nupkg.sha512",
+        "xamarin.androidx.lifecycle.common.2.8.6.nupkg.sha512",
         "xamarin.androidx.lifecycle.common.nuspec"
       ]
     },
-    "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.5.1": {
-      "sha512": "yhlKDl7f1sP1zEzVm2rsohnGyeW8J5HLLqb7kgRqi9lj5m379b8JA4T4GAHCg6Rm0gRFGcpyK/nH5AQ7rIVfUA==",
+    "Xamarin.AndroidX.Lifecycle.Common.Jvm/2.8.6": {
+      "sha512": "oQXjXk8CL9bvXvRNr6tr2oNyuWd9ECH42p5nnTsJoehW/AlLnY8zlFDS6i2vAvSGmvaXC1Vw064aUjQE7PUWGQ==",
       "type": "package",
-      "path": "xamarin.androidx.lifecycle.common.jvm/2.8.5.1",
+      "path": "xamarin.androidx.lifecycle.common.jvm/2.8.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37774,7 +37594,7 @@
         "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.Jvm.pdb",
         "lib/net8.0-android34.0/Xamarin.AndroidX.Lifecycle.Common.Jvm.xml",
         "readme.md",
-        "xamarin.androidx.lifecycle.common.jvm.2.8.5.1.nupkg.sha512",
+        "xamarin.androidx.lifecycle.common.jvm.2.8.6.nupkg.sha512",
         "xamarin.androidx.lifecycle.common.jvm.nuspec"
       ]
     },
@@ -38398,6 +38218,28 @@
         "xamarin.androidx.window.extensions.core.core.nuspec"
       ]
     },
+    "Xamarin.Build.Download/0.11.4": {
+      "sha512": "u2ROt0h6P7mfs0jbmgvmTrqU/YEpEZcf16xcHa78GSEp7fOZunNtJLCZxooeI1V5p+lrr9kYdg3Pa8FoTbgcXQ==",
+      "type": "package",
+      "path": "xamarin.build.download/0.11.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICE.txt",
+        "build/Microsoft.Win32.Registry.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "buildTransitive/Microsoft.Win32.Registry.dll",
+        "buildTransitive/Newtonsoft.Json.dll",
+        "buildTransitive/Xamarin.Build.Download.dll",
+        "buildTransitive/Xamarin.Build.Download.props",
+        "buildTransitive/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.11.4.nupkg.sha512",
+        "xamarin.build.download.nuspec"
+      ]
+    },
     "Xamarin.Google.Android.Material/1.11.0.3": {
       "sha512": "Vq0EuJdA99sC2/TuK0MgMrKkFOGXQJk6gQAwE3XHLzXriVgTOAPj7ruzl5RNmWOWQHoFnLKfGigy72uC821YWg==",
       "type": "package",
@@ -38458,6 +38300,83 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
+    "Xamarin.GooglePlayServices.Base/118.5.0": {
+      "sha512": "zKBnO/OxCkZJb9lqvlAt/KrXWKk5mncA9FNYlVKleA++wmOHJCfgHZjkI9UYhZyo8O8w/7NFKZYOLeWH6zyYzQ==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.base/118.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net8.0-android34.0/Xamarin.GooglePlayServices.Base.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Base.targets",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.dll",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.pdb",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Base.xml",
+        "lib/net8.0-android34.0/play-services-base.aar",
+        "proguard/proguard.txt",
+        "readme.md",
+        "xamarin.googleplayservices.base.118.5.0.nupkg.sha512",
+        "xamarin.googleplayservices.base.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Basement/118.4.0": {
+      "sha512": "N3SctDOaC9AdmszQbl/752NG5WNqy82OLg89Jyfh94doHMdpqQ48eF/3eSK8ZkUL676b5cjxxRRE7XwqcXad0g==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.basement/118.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.targets",
+        "build/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll",
+        "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.dll",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.pdb",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Basement.xml",
+        "lib/net8.0-android34.0/play-services-basement.aar",
+        "proguard/proguard.txt",
+        "readme.md",
+        "xamarin.googleplayservices.basement.118.4.0.nupkg.sha512",
+        "xamarin.googleplayservices.basement.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Location/121.3.0": {
+      "sha512": "Sy5qbPaAyf52PfrZ8FCd+328zHCSTZo2WtRNmzBjpxdfTOqG4Nx+IwzfNFnpXPVuwfsiObAFuAPukgekaLm5lg==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.location/121.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net8.0-android34.0/Xamarin.GooglePlayServices.Location.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Location.targets",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.dll",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.pdb",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Location.xml",
+        "lib/net8.0-android34.0/play-services-location.aar",
+        "readme.md",
+        "xamarin.googleplayservices.location.121.3.0.nupkg.sha512",
+        "xamarin.googleplayservices.location.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Tasks/118.2.0": {
+      "sha512": "P68O8qIgMXxLtBKdKO6FvLOIeEZLI080YL8UOcm3sHfIMjxytNoxCfzwLsjrEjzVGnRTAfnX2jmRI9dQtBA96w==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.tasks/118.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.targets",
+        "buildTransitive/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.targets",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.dll",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.pdb",
+        "lib/net8.0-android34.0/Xamarin.GooglePlayServices.Tasks.xml",
+        "lib/net8.0-android34.0/play-services-tasks.aar",
+        "proguard/proguard.txt",
+        "readme.md",
+        "xamarin.googleplayservices.tasks.118.2.0.nupkg.sha512",
+        "xamarin.googleplayservices.tasks.nuspec"
+      ]
+    },
     "Xamarin.Jetbrains.Annotations/24.1.0.8": {
       "sha512": "eY7msmiIPk+5Kt5h/HjJ8uC/qqxFrpQ/H2M6EVSmWXW10l4qj1tN2wwiIyB2PKYNXAu9FI/OFcnBwkO2ImBK/Q==",
       "type": "package",
@@ -38477,10 +38396,10 @@
         "xamarin.jetbrains.annotations.nuspec"
       ]
     },
-    "Xamarin.Kotlin.StdLib/2.0.10.1": {
-      "sha512": "Ik7W9GTPjD0ajV1VCiOwwhDvgLrFY6V5PxQnA7cJej7vgn2EG7wPOMQAn2P+qEBhjxFlm2MgkQN4l66CcjLCeA==",
+    "Xamarin.Kotlin.StdLib/2.0.20": {
+      "sha512": "oo8b15r83WyKKm6m+btxEoGQEWRYCb7uFxNP+/taR/P74y0zmOKaS9JIDefX1EIxo7t4pIf7sgK44NTiYAaEYA==",
       "type": "package",
-      "path": "xamarin.kotlin.stdlib/2.0.10.1",
+      "path": "xamarin.kotlin.stdlib/2.0.20",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -38488,11 +38407,11 @@
         "THIRD-PARTY-NOTICES.txt",
         "build/net8.0-android34.0/Xamarin.Kotlin.StdLib.targets",
         "buildTransitive/net8.0-android34.0/Xamarin.Kotlin.StdLib.targets",
-        "jar/org.jetbrains.kotlin.kotlin-stdlib-2.0.10.jar",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-2.0.20.jar",
         "lib/net8.0-android34.0/Xamarin.Kotlin.StdLib.dll",
         "lib/net8.0-android34.0/Xamarin.Kotlin.StdLib.xml",
         "readme.md",
-        "xamarin.kotlin.stdlib.2.0.10.1.nupkg.sha512",
+        "xamarin.kotlin.stdlib.2.0.20.nupkg.sha512",
         "xamarin.kotlin.stdlib.nuspec"
       ]
     },
@@ -38553,10 +38472,10 @@
         "xamarin.kotlinx.coroutines.android.nuspec"
       ]
     },
-    "Xamarin.KotlinX.Coroutines.Core/1.8.1.3": {
-      "sha512": "uUncouqPbBxN9jfLr4rNvAmJfS04hNg1ugeMTbQ3dryd9PbJurRKGomaaNeiPgz3gF1qSqFIEcp3yxZE/G/neA==",
+    "Xamarin.KotlinX.Coroutines.Core/1.9.0": {
+      "sha512": "CjUEPc9bV9/Ot5oGVMCQzuTz6JuJv2hJEmNC+I0xr85fH71RL1ZoKT0Th6GqehvmA6mvG0pW4PzoPM+/XMfa1Q==",
       "type": "package",
-      "path": "xamarin.kotlinx.coroutines.core/1.8.1.3",
+      "path": "xamarin.kotlinx.coroutines.core/1.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -38564,18 +38483,18 @@
         "THIRD-PARTY-NOTICES.txt",
         "build/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.targets",
         "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.targets",
-        "jar/org.jetbrains.kotlinx.kotlinx-coroutines-core-1.8.1.jar",
+        "jar/org.jetbrains.kotlinx.kotlinx-coroutines-core-1.9.0.jar",
         "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.dll",
         "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.xml",
         "readme.md",
-        "xamarin.kotlinx.coroutines.core.1.8.1.3.nupkg.sha512",
+        "xamarin.kotlinx.coroutines.core.1.9.0.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.nuspec"
       ]
     },
-    "Xamarin.KotlinX.Coroutines.Core.Jvm/1.8.1.3": {
-      "sha512": "b2QMyZM27KKSkSIGQrFjtPf7pLIdiOdE8iSZEcapYY1Idy4pHMKDSicJ7hQ/K7jy1hV+Uua/PpYtttPONJuL5Q==",
+    "Xamarin.KotlinX.Coroutines.Core.Jvm/1.9.0": {
+      "sha512": "AfOgme/DNU58vQl9JeBklCjZSN90s/rpv72JgYL5aGMsoGe2Q2IuGri9xMlmiqANgnE1iGTktk4oGznhmwthRQ==",
       "type": "package",
-      "path": "xamarin.kotlinx.coroutines.core.jvm/1.8.1.3",
+      "path": "xamarin.kotlinx.coroutines.core.jvm/1.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -38583,11 +38502,11 @@
         "THIRD-PARTY-NOTICES.txt",
         "build/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets",
         "buildTransitive/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets",
-        "jar/org.jetbrains.kotlinx.kotlinx-coroutines-core-jvm-1.8.1.jar",
+        "jar/org.jetbrains.kotlinx.kotlinx-coroutines-core-jvm-1.9.0.jar",
         "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.Jvm.dll",
         "lib/net8.0-android34.0/Xamarin.KotlinX.Coroutines.Core.Jvm.xml",
         "readme.md",
-        "xamarin.kotlinx.coroutines.core.jvm.1.8.1.3.nupkg.sha512",
+        "xamarin.kotlinx.coroutines.core.jvm.1.9.0.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
     }
@@ -38595,7 +38514,7 @@
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
       "Microsoft.Extensions.Logging.Console >= 8.0.1",
-      "Microsoft.NET.ILLink.Tasks >= 8.0.14",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.13",
       "SkiaSharp.Skottie >= 2.88.9",
       "SkiaSharp.Views.Uno.WinUI >= 2.88.9",
       "Svg.Skia >= 2.0.0.4",
@@ -38630,9 +38549,11 @@
       "Xamarin.AndroidX.AppCompat >= 1.7.0.3",
       "Xamarin.AndroidX.Browser >= 1.8.0.6",
       "Xamarin.AndroidX.Legacy.Support.V4 >= 1.0.0.23",
+      "Xamarin.AndroidX.Lifecycle.Common >= 2.8.6",
       "Xamarin.AndroidX.RecyclerView >= 1.3.2.8",
       "Xamarin.AndroidX.SwipeRefreshLayout >= 1.1.0.24",
-      "Xamarin.Google.Android.Material >= 1.11.0.3"
+      "Xamarin.Google.Android.Material >= 1.11.0.3",
+      "Xamarin.GooglePlayServices.Location >= 121.3.0"
     ],
     "net8.0-desktop1.0": [
       "Microsoft.Extensions.Logging.Console >= 8.0.1",
@@ -38720,7 +38641,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0-android34.0": {
@@ -38734,7 +38655,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.14, )",
+            "version": "[8.0.13, )",
             "autoReferenced": true
           },
           "SkiaSharp.Skottie": {
@@ -38861,6 +38782,7 @@
             "autoReferenced": true
           },
           "Uno.UI.HotDesign": {
+            "include": "None",
             "target": "Package",
             "version": "[1.3.1, )",
             "autoReferenced": true
@@ -38876,6 +38798,7 @@
             "autoReferenced": true
           },
           "Uno.WinUI.DevServer": {
+            "include": "None",
             "target": "Package",
             "version": "[5.6.33, )",
             "autoReferenced": true
@@ -38910,6 +38833,11 @@
             "version": "[1.0.0.23, )",
             "autoReferenced": true
           },
+          "Xamarin.AndroidX.Lifecycle.Common": {
+            "target": "Package",
+            "version": "[2.8.6, )",
+            "versionCentrallyManaged": true
+          },
           "Xamarin.AndroidX.RecyclerView": {
             "target": "Package",
             "version": "[1.3.2.8, )",
@@ -38924,7 +38852,16 @@
             "target": "Package",
             "version": "[1.11.0.3, )",
             "autoReferenced": true
+          },
+          "Xamarin.GooglePlayServices.Location": {
+            "target": "Package",
+            "version": "[121.3.0, )",
+            "versionCentrallyManaged": true
           }
+        },
+        "centralPackageVersions": {
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.6",
+          "Xamarin.GooglePlayServices.Location": "121.3.0"
         },
         "imports": [
           "net461",
@@ -38940,31 +38877,47 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.Android.Ref.34",
-            "version": "[34.0.148, 34.0.148]"
+            "version": "[34.0.147, 34.0.147]"
           },
           {
             "name": "Microsoft.Android.Runtime.34.android-arm",
-            "version": "[34.0.148, 34.0.148]"
+            "version": "[34.0.147, 34.0.147]"
           },
           {
             "name": "Microsoft.Android.Runtime.34.android-arm64",
-            "version": "[34.0.148, 34.0.148]"
+            "version": "[34.0.147, 34.0.147]"
           },
           {
             "name": "Microsoft.Android.Runtime.34.android-x64",
-            "version": "[34.0.148, 34.0.148]"
+            "version": "[34.0.147, 34.0.147]"
           },
           {
             "name": "Microsoft.Android.Runtime.34.android-x86",
-            "version": "[34.0.148, 34.0.148]"
+            "version": "[34.0.147, 34.0.147]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
+            "version": "[8.0.13, 8.0.13]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
+            "version": "[8.0.13, 8.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.Mono.android-arm",
+            "version": "[8.0.13, 8.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.Mono.android-arm64",
+            "version": "[8.0.13, 8.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.Mono.android-x64",
+            "version": "[8.0.13, 8.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.Mono.android-x86",
+            "version": "[8.0.13, 8.0.13]"
           }
         ],
         "frameworkReferences": {
@@ -38975,7 +38928,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
       },
       "net8.0-desktop1.0": {
         "targetAlias": "net8.0-desktop",
@@ -39109,6 +39062,7 @@
             "autoReferenced": true
           },
           "Uno.UI.HotDesign": {
+            "include": "None",
             "target": "Package",
             "version": "[1.3.1, )",
             "autoReferenced": true
@@ -39119,6 +39073,7 @@
             "autoReferenced": true
           },
           "Uno.WinUI.DevServer": {
+            "include": "None",
             "target": "Package",
             "version": "[5.6.33, )",
             "autoReferenced": true
@@ -39159,6 +39114,10 @@
             "autoReferenced": true
           }
         },
+        "centralPackageVersions": {
+          "Xamarin.AndroidX.Lifecycle.Common": "2.8.6",
+          "Xamarin.GooglePlayServices.Location": "121.3.0"
+        },
         "imports": [
           "net461",
           "net462",
@@ -39173,15 +39132,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
+            "version": "[8.0.13, 8.0.13]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[8.0.14, 8.0.14]"
+            "version": "[8.0.13, 8.0.13]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
+            "version": "[8.0.13, 8.0.13]"
           }
         ],
         "frameworkReferences": {
@@ -39189,7 +39148,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -39206,5 +39165,49 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.AndroidX.Lifecycle.Runtime 2.8.5.1 requires Xamarin.AndroidX.Lifecycle.Common (>= 2.8.5.1 && < 2.8.6) but version Xamarin.AndroidX.Lifecycle.Common 2.8.6 was resolved.",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.Common",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.AndroidX.Lifecycle.LiveData.Core 2.8.5.1 requires Xamarin.AndroidX.Lifecycle.Common (>= 2.8.5.1 && < 2.8.6) but version Xamarin.AndroidX.Lifecycle.Common 2.8.6 was resolved.",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.Common",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Xamarin.AndroidX.Lifecycle.Runtime.Android 2.8.5.1 requires Xamarin.AndroidX.Lifecycle.Common (>= 2.8.5.1 && < 2.8.6) but version Xamarin.AndroidX.Lifecycle.Common 2.8.6 was resolved.",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.Common",
+      "targetGraphs": [
+        "net8.0-android34.0",
+        "net8.0-android34.0/android-arm",
+        "net8.0-android34.0/android-arm64",
+        "net8.0-android34.0/android-x64",
+        "net8.0-android34.0/android-x86"
+      ]
+    }
+  ]
 }

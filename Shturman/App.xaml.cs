@@ -64,10 +64,8 @@ public partial class App : Application
                     .AddContentSerializer(context))
                 .UseHttp((context, services) => services
                     // Register HttpClient
-#if DEBUG
                     // DelegatingHandler will be automatically injected into Refit Client
                     .AddTransient<DelegatingHandler, DebugHttpHandler>())
-#endif
                 .ConfigureServices((context, services) =>
                 {
                     // TODO: Register your services

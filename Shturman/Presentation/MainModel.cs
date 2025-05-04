@@ -1,8 +1,23 @@
-using Windows.Devices.Geolocation;
+#if __ANDROID__
+using Android;
+using Android.Gms.Common;
+using Android.Util;
+using Android.Gms.Location;
+using Application = Android.App.Application;
+using Android.OS;
+using Android.Locations;
+using AndroidX.Core.Content;
+using Android.Content.PM;
+using Android.Widget;
+#endif
 using System;
+using System.Globalization;
+using Windows.Devices.Geolocation;
 using Windows.Devices.Sensors;
 using Windows.Foundation;
 using SkiaSharp.Views.Windows;
+using Uno.Extensions.Reactive.Bindings;
+
 
 namespace Shturman.Presentation;
 
@@ -13,59 +28,135 @@ public partial record MainModel
         IOptions<AppConfig>? appInfo,
         INavigator navigator)
     {
-        Geolocation = new Geolocator();
-        switch (Geolocator.RequestAccessAsync().GetResults())
-        {
-            case GeolocationAccessStatus.Allowed:
-            {
-                Geolocation.PositionChanged += GeolocationOnPositionChanged;
-                break; 
-            } 
-            case GeolocationAccessStatus.Denied:
-                throw new Exception("Access denied.");
-            case GeolocationAccessStatus.Unspecified:
-                throw new Exception("Unspecified.");
-        }
-        var __ = Geolocation.GetGeopositionAsync();
-        Geolocation.ReportInterval = 1000;
-        Geolocation.DesiredAccuracyInMeters = 1;
         compass.ReadingChanged += CompassOnReadingChanged;
-        
-    }
-
-    private void GeolocationOnPositionChanged(Geolocator sender, PositionChangedEventArgs args)
-    {
-        currentPosition = args.Position;
-        if (ActivatePath)
+#if __ANDROID__
+        if (GoogleApiAvailability.Instance.IsGooglePlayServicesAvailable(BaseActivity.Current) == 0)
         {
-            if (Calculator.CalculateDistance(currentPosition, path[0]) < 10)
+            if (ContextCompat.CheckSelfPermission(BaseActivity.Current, Manifest.Permission.AccessFineLocation) ==
+                Permission.Granted)
             {
-                path.Remove(path[0]);
+                Android.Gms.Location.LocationRequest.Builder locationRequestBuilder =
+                    new Android.Gms.Location.LocationRequest.Builder(Priority.PriorityHighAccuracy, 10000);
+                locationRequestBuilder.SetMaxUpdates(Int32.MaxValue);
+                locationRequestBuilder.SetMaxUpdateAgeMillis(10000);
+                locationRequestBuilder.SetMaxUpdateDelayMillis(10000);
+                locationRequestBuilder.SetMinUpdateIntervalMillis(0);
+                locationRequestBuilder.SetGranularity(2);
+                Android.Gms.Location.LocationRequest locationRequest = locationRequestBuilder.Build();
+                LocationListener locationListener = new LocationListener();
+                //LocationCallback locationCallback = new LocationCallback();
+                fusedLocation.RequestLocationUpdates(locationRequest, locationListener, Looper.MainLooper);
+                //locationCallback.LocationResult += LocationCallbackOnLocationResult;
+                locationListener.LocationChanged += LocationListenerOnLocationChanged;
+                
             }
-
-            TargetUICompass.UpdateAsync(c => c.ChangeDegrees(Calculator.CalculateBearing(
-                currentPosition.Coordinate.Latitude, currentPosition.Coordinate.Longitude,
-                path[0].Coordinate.Latitude, path[0].Coordinate.Longitude)));
+            else
+            {
+                NeedPermissions = true;
+                ChangeCenterText("Даны недостаточные разрешения. Приложение не может функционировать без них.");
+            }
         }
         else
         {
-            path.Add(currentPosition);
+            try
+            {
+                GoogleApiAvailability.Instance.MakeGooglePlayServicesAvailable(BaseActivity.Current);
+            }
+            catch (Exception e)
+            {
+                Log.Error("Shturman", "User didn't fix GMS");
+                BaseActivity.Current.FinishAffinity();
+            }
+            
         }
+#endif
     }
 
+    bool NeedPermissions;
+
+#if __ANDROID__
+    private void LocationListenerOnLocationChanged(Location location)
+    {
+        if (location.Accuracy < 4.5
+            // & DateTime.Now - UnixTimeStampToDateTime(location.Time).ToLocalTime() <= DateTime.Now.Subtract(new DateTime(0,0,0,0,0,10
+           )//)) // Check if accuracy ≤3 meters
+        {
+            currentPosition = new Geoposition(
+                new Geocoordinate(
+                    location.Latitude,
+                    location.Longitude,
+                    location.Accuracy,
+                    DateTime.Now,
+                    new Geopoint(new BasicGeoposition())));
+            if (ActivatePath)
+            {
+                if (Calculator.CalculateDistance(path[0], currentPosition) < path[0].Coordinate.Accuracy)
+                {
+                    path.Remove(path[0]);
+                }
+
+                targetHeading = Calculator.CalculateBearing(currentPosition.Coordinate.Latitude,
+                    currentPosition.Coordinate.Longitude,
+                    path[0].Coordinate.Latitude, path[0].Coordinate.Longitude);
+            }
+            else
+            {
+                path.Add(new Geoposition(
+                    new Geocoordinate(
+                        location.Latitude, 
+                        location.Longitude, 
+                        location.Accuracy, 
+                        DateTime.Now, 
+                        new Geopoint(new BasicGeoposition()))));
+#if DEBUG
+                pathnumber.UpdateAsync(c => new Text(path.Count.ToString()));
+#endif
+            }
+        }
+    }
+    /*
+    private void LocationCallbackOnLocationResult(object? sender, LocationCallbackResultEventArgs e)
+    {
+        foreach (var location in e.Result.Locations)
+        {
+            if (location.Accuracy <= 4.5 
+                // & DateTime.Now - UnixTimeStampToDateTime(location.Time).ToLocalTime() <= DateTime.Now.Subtract(new DateTime(0,0,0,0,0,10
+               )//)) // Check if accuracy ≤3 meters
+            {
+                path.Add(new Geoposition(
+                    new Geocoordinate(
+                        location.Latitude, 
+                        location.Longitude, 
+                        location.Accuracy, 
+                        DateTimeOffset.Now, 
+                        new Geopoint(new BasicGeoposition()))));
+                currentPosition = new Geoposition(
+                    new Geocoordinate(
+                        location.Latitude,
+                        location.Longitude,
+                        location.Accuracy,
+                        DateTimeOffset.Now,
+                        new Geopoint(new BasicGeoposition())));
+            }
+        }
+    }
+    */
+#endif
     private void CompassOnReadingChanged(Compass sender, CompassReadingChangedEventArgs args)
     {
         if (ActivatePath)
         {
-            ChangeDegrees(compassFilter.Update((double)args.Reading.HeadingTrueNorth));     
+            ChangeTargetDegrees(compassFilter.Update((double)args.Reading.HeadingTrueNorth) + targetHeading);     
         }
     }
-
+#if __ANDROID__
+    private IFusedLocationProviderClient fusedLocation = LocationServices.GetFusedLocationProviderClient(Application.Context);
+#endif
     private CompassFilter compassFilter = new(9);
     private Geoposition currentPosition;
+    private double targetHeading;
 
     public Compass compass = Compass.GetDefault();
-    private Geolocator Geolocation = new();
 
     public List<Geoposition> path = new();
     private bool _activatePath;
@@ -78,7 +169,15 @@ public partial record MainModel
             ReversePath();
         }
     }
+    public IState<Text> Text => State.Value(this, () => new Text("Дай-ка тебе покажу, что делает что. " +
+                                                                 "Верху - компасс. Красная стрелка обозначает куда иди, а черная - твоё направление. " +
+                                                                 "Чтобы включить или выключить его, надо нажать на красную кнопку. " +
+                                                                 "Иконка паузы очищает путь."));
+    
     public IState<Button> Button => State.Value(this, () => new Button("Я заблудился"));
+#if DEBUG
+    public IState<Text> pathnumber => State.Value(this, () => new Text(""));
+#endif
     
     public IState<UICompass> UICompass => State.Value(this, () => new UICompass(0));
     
@@ -89,21 +188,24 @@ public partial record MainModel
         path.Reverse();
     }
 
+    public void Deletepath()
+    {
+        path = new List<Geoposition>();
+    }
+
     public ValueTask ChangeText()
     {
         ActivatePath = !ActivatePath;
         return Button.UpdateAsync(c => c.ChangeText());
     }
+    
+    public ValueTask ChangeCenterText(string text)
+        => Text.UpdateAsync(c => c = new Text(text));
 
     public ValueTask ChangeDegrees(double degrees)
         => UICompass.UpdateAsync(c => c.ChangeDegrees(degrees));
-
-    public Geocoordinate GetSingleGeoLocation()
-    {
-        var access = Geolocator.RequestAccessAsync();
-        Geolocation.DesiredAccuracy = PositionAccuracy.High;
-        return Geolocation.GetGeopositionAsync().GetResults().Coordinate;
-    }
+    public ValueTask ChangeTargetDegrees(double degrees)
+        => TargetUICompass.UpdateAsync(c => c.ChangeDegrees(degrees));
 
     public static class Calculator
     {

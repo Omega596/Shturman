@@ -3,21 +3,20 @@
         <TargetFrameworks>net8.0-android;net8.0-desktop;</TargetFrameworks>
         <TargetFrameworks Condition=" $([MSBuild]::IsOSPlatform('windows')) ">$(TargetFrameworks);net8.0-windows10.0.19041</TargetFrameworks>
         <TargetFrameworks Condition=" !$([MSBuild]::IsOSPlatform('linux')) ">$(TargetFrameworks);net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
-
         <OutputType>Exe</OutputType>
         <UnoSingleProject>true</UnoSingleProject>
 
         <!-- Display name -->
-        <ApplicationTitle>Shturman</ApplicationTitle>
+        <ApplicationTitle>Штурман</ApplicationTitle>
         <!-- App Identifier -->
-        <ApplicationId>com.companyname.Shturman</ApplicationId>
+        <ApplicationId>com.assembly.Shturman</ApplicationId>
         <!-- Versions -->
         <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
         <ApplicationVersion>1</ApplicationVersion>
         <!-- Package Publisher -->
         <ApplicationPublisher>O=Shturman</ApplicationPublisher>
         <!-- Package Description -->
-        <Description>Shturman powered by Uno Platform.</Description>
+        <Description>Приложение для нахождения пути назад</Description>
 
         <!--
           UnoFeatures let's you quickly add and manage implicit package references based on the features you want to use.
@@ -39,9 +38,12 @@
         </UnoFeatures>
     </PropertyGroup>
     <ItemGroup>
-      <Folder Include="obj\Debug\" />
+      <Folder Include="obj\" />
       <Folder Include="Serialization\" />
       <Folder Include="Services\Caching\" />
     </ItemGroup>
-
+    <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
+      <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" />
+      <PackageReference Include="Xamarin.GooglePlayServices.Location" />
+    </ItemGroup>
 </Project>

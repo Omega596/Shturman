@@ -1,8 +1,12 @@
+using Windows.UI.Notifications;
 using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using Android.Locations;
+using Notification = Android.App.Notification;
 
 namespace Shturman.Droid;
 
